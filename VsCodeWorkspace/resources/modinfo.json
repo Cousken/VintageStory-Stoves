@@ -1,0 +1,18 @@
+{
+  "Type": 1,
+  "TextureSize": 32,
+  "Name": "Stoves",
+  "Version": "0.0.1",
+  "NetworkVersion": null,
+  "Description": "",
+  "Website": "",
+  "ModID": "stoves",
+  "Authors": [
+    "Adam Politanski"
+  ],
+  "Contributors": [],
+  "Side": "Universal",
+  "RequiredOnClient": true,
+  "RequiredOnServer": true,
+  "Dependencies": {}
+}

@@ -1,0 +1,12 @@
+using Vintagestory.API.Common;
+using Vintagestory.GameContent;
+
+namespace Vintagestory.Stoves
+{
+    public class BlockClayStove : Block
+    {
+        public BlockClayStove()
+        {
+        }
+    }
+}
