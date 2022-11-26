@@ -1,0 +1,1 @@
+Basically abandoned the VS Code approach to a VS Studio approach since it has much better support from Vintage devs. This folder is to contain only mod files. VSCode files could be cleaned up.

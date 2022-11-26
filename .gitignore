@@ -357,3 +357,10 @@ assets
 # Local files
 .vs/
 dist/
+
+# Vintage Story Mod Template
+ICSharpCode.SharpZipLib.dll
+modtools.command
+modtools.temp
+Newtonsoft.Json.dll
+vsmodtools.exe
