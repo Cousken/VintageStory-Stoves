@@ -363,3 +363,5 @@ modtools.command
 modtools.temp
 Newtonsoft.Json.dll
 vsmodtools.exe
+/start vs dev.bat
+/notes.txt
