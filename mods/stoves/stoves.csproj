@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{df8690b2-3b85-45fc-a8d9-55791d4e83e0}</ProjectGuid>
+    <ProjectGuid>{DF8690B2-3B85-45FC-A8D9-55791D4E83E0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>stoves</RootNamespace>
@@ -32,51 +32,46 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-
-
-    <Reference Include="Microsoft.CSharp"/>
-
-    <Reference Include="System.Data"/>
-
-    <Reference Include="System.Net.Http"/>
-
-    <Reference Include="System.Xml"/>
-
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
     <Reference Include="VintagestoryAPI">
       <HintPath>F:\Games\VintagestoryDev\VintagestoryAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-
     <Reference Include="VSSurvivalMod">
       <HintPath>F:\Games\VintagestoryDev\Mods\VSSurvivalMod.dll</HintPath>
       <Private>False</Private>
     </Reference>
-
     <Reference Include="VSEssentials">
       <HintPath>F:\Games\VintagestoryDev\Mods\VSEssentials.dll</HintPath>
       <Private>False</Private>
     </Reference>
-
     <Reference Include="VSCreativeMod">
       <HintPath>F:\Games\VintagestoryDev\Mods\VSCreativeMod.dll</HintPath>
       <Private>False</Private>
     </Reference>
-
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>F:\Games\VintagestoryDev\Lib\Newtonsoft.Json.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="assets\" />
-    <Folder Include="src\" />
     <Content Include="modinfo.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\BlockClayStove.cs" />
+    <Compile Include="src\StoveMod.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\stoves\blocktypes\clay\claystove.json" />
+    <None Include="assets\stoves\lang\en.json" />
+    <None Include="assets\stoves\shapes\claystove.json" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
