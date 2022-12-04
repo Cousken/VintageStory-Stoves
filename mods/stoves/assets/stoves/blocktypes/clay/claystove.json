@@ -1,0 +1,72 @@
+{
+  "behaviors": [
+    { "name": "HorizontalOrientable" },
+    { "name": "Ignitable" }
+  ],
+  "blockmaterial": "Ceramic",
+  "code": "claystove",
+  "class": "claystove",
+  "drawtype": "json",
+  "creativeinventory": {
+    "general": [
+      "*-north"
+    ],
+    "construction": [
+      "*-north"
+    ],
+    "stoves": [
+      "*",
+      "*-north"
+    ]
+  },
+  "lightAbsorption": 3,
+  "maxStackSize": 1,
+  "resistance": 3.5,
+  "selectionbox": {
+    "x1": 0,
+    "y1": 0,
+    "z1": 0,
+    "x2": 1,
+    "y2": 0.748,
+    "z2": 1
+  },
+  "shape": { "base": "shapes/claystove" },
+  "shapeByType": {
+    "*-north": {
+      "base": "shapes/claystove",
+      "rotateY": 0
+    },
+    "*-east": {
+      "base": "shapes/claystove",
+      "rotateY": 270
+    },
+    "*-south": {
+      "base": "shapes/claystove",
+      "rotateY": 180
+    },
+    "*-west": {
+      "base": "shapes/claystove",
+      "rotateY": 90
+    }
+  },
+  "sideopaque": {
+    "all": false
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "sounds": {
+    "place": "game:block/ceramicplace",
+    "byTool": {
+      "Pickaxe": {
+        "hit": "game:block/rock-hit-pickaxe",
+        "break": "game:block/rock-break-pickaxe"
+      }
+    }
+  },
+  "textures": {
+    "all": {
+      "base": "game:block/clay/oven/base"
+    }
+  }
+}

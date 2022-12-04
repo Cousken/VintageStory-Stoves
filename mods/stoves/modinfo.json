@@ -1,11 +1,18 @@
 {
-  "type": "code",
-  "modid": "stoves",
-  "name": "stoves",
-  "authors": ["Unknown"],
-  "description": "To be added",
-  "version": "1.0.0",
-  "dependencies": {
-    "game": "1.17.9"
-  }
+  "Type": "code",
+  "TextureSize": 32,
+  "Name": "Stoves",
+  "Version": "0.0.2",
+  "NetworkVersion": null,
+  "Description": "",
+  "Website": "",
+  "ModID": "stoves",
+  "Authors": [
+    "Adam Politanski"
+  ],
+  "Contributors": [],
+  "Side": "Universal",
+  "RequiredOnClient": true,
+  "RequiredOnServer": true,
+  "Dependencies": {}
 }

@@ -352,7 +352,6 @@ MigrationBackup/
 # VintageStory Source references
 VS Mod Source
 VS Source Code
-assets
 
 # Local files
 .vs/
