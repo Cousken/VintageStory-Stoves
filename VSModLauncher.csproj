@@ -66,6 +66,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="mods\stoves\stoves.csproj">
+      <Project>{df8690b2-3b85-45fc-a8d9-55791d4e83e0}</Project>
+      <Name>stoves</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>copy "$(TargetPath)" "F:\Games\VintagestoryDev\Mods\"

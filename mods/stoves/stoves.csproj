@@ -64,13 +64,14 @@
     <Content Include="modinfo.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\BlockEntityClayStove.cs" />
     <Compile Include="src\BlockClayStove.cs" />
     <Compile Include="src\StoveMod.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\stoves\blocktypes\clay\claystove.json" />
     <None Include="assets\stoves\lang\en.json" />
-    <None Include="assets\stoves\shapes\claystove.json" />
+    <None Include="assets\stoves\shapes\claystoveshape.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

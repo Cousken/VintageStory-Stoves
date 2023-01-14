@@ -10,6 +10,7 @@ namespace stoves
             base.Start(api);
 
             api.RegisterBlockClass("claystove", typeof(BlockClayStove));
+            api.RegisterBlockEntityClass("claystoveblockentity", typeof(BlockEntityClayStove));
         }
     }
 }
